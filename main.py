@@ -48,7 +48,7 @@ def init():
     st.header("Too long; didn't watch(TL;DW)")
 
 def summary(transcr:str) -> str:
-    chat = ChatOpenAI(temperature=0.6, max_tokens=300, openai_api_key='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')
+    chat = ChatOpenAI(temperature=0.6, max_tokens=300, openai_api_key='YOUR_KEY')
 
     prompt = [SystemMessage(content='You are to summarize a youtube video from the given transcipt below.use 10 bullet points'), HumanMessage(content=transcr)]
     with st.spinner("Summarizing..."):
