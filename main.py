@@ -60,7 +60,7 @@ def summary(transcr:str) -> str:
     return summary
 
 def gen_ai():
-    chat = ChatOpenAI(temperature=0.6, max_tokens=70, openai_api_key='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')
+    chat = ChatOpenAI(temperature=0.6, max_tokens=70, openai_api_key='_')
 
     url_input = st.text_input('Enter YouTube URL: ')
     button = st.button(key='send_url', label='Summarize')
